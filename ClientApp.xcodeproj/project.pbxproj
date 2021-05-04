@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		31313302264049B40096CF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31313300264049B40096CF0C /* Main.storyboard */; };
 		31313304264049B50096CF0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31313303264049B50096CF0C /* Assets.xcassets */; };
 		31313307264049B50096CF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31313305264049B50096CF0C /* LaunchScreen.storyboard */; };
+		31484176264147C000A820EA /* ClosedSourceFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 31484175264147C000A820EA /* ClosedSourceFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		31313303264049B50096CF0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31313306264049B50096CF0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31313308264049B50096CF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3148411426404F3400A820EA /* ClosedSourceFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ClosedSourceFramework.xcframework; path = ../ClosedSourceFramework/xcf/ClosedSourceFramework.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31484176264147C000A820EA /* ClosedSourceFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				313132F9264049B40096CF0C /* ClientApp */,
 				313132F8264049B40096CF0C /* Products */,
+				3148411326404F3400A820EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +71,14 @@
 			path = ClientApp;
 			sourceTree = "<group>";
 		};
+		3148411326404F3400A820EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3148411426404F3400A820EA /* ClosedSourceFramework.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = ClientApp;
+			packageProductDependencies = (
+				31484175264147C000A820EA /* ClosedSourceFramework */,
+			);
 			productName = ClientApp;
 			productReference = 313132F7264049B40096CF0C /* ClientApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 313132EE264049B40096CF0C;
+			packageReferences = (
+				31484174264147C000A820EA /* XCRemoteSwiftPackageReference "vendored-closed-source-framework" */,
+			);
 			productRefGroup = 313132F8264049B40096CF0C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		31484174264147C000A820EA /* XCRemoteSwiftPackageReference "vendored-closed-source-framework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gersonnoboa/vendored-closed-source-framework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		31484175264147C000A820EA /* ClosedSourceFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31484174264147C000A820EA /* XCRemoteSwiftPackageReference "vendored-closed-source-framework" */;
+			productName = ClosedSourceFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 313132EF264049B40096CF0C /* Project object */;
 }

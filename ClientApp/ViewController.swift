@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import ClosedSourceFramework
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let closedSourceStruct = ClosedSourceStruct()
+        print(closedSourceStruct.string)
+        closedSourceStruct.makeRequest()
     }
-
-
 }
 

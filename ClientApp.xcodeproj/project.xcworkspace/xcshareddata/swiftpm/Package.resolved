@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
+          "version": "5.4.3"
+        }
+      },
+      {
+        "package": "TwilioVoice",
+        "repositoryURL": "https://github.com/gersonnoboa/twilio-voice-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "c787ff9021d4de277eaa60f17e244bf2707a26f3",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "ClosedSourceFramework",
+        "repositoryURL": "https://github.com/gersonnoboa/vendored-closed-source-framework",
+        "state": {
+          "branch": null,
+          "revision": "a5ab1b709a39e67d7e70283406b8500763e15303",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
